@@ -1,0 +1,373 @@
+/* Герой */
+.hero {
+  margin: 0 auto;
+  max-width: 479px;
+  min-height: 400px;
+  padding: 118px 0;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/flag.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 767px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/flag.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/flag.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.364;
+  }
+}
+
+.benefit__thumb {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+/* Заголовки преимуществ */
+.benefits__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
+}
+
+/* описание преимуществ */
+.benefits__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__description {
+    margin-bottom: 30px;
+  }
+}
+
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Наши преимущества список ul*/
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .benefits__item {
+    flex-basis: calc(50% - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+/* Задаем боковую геометрию лишкам */
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .benefits__item {
+    flex-basis: calc(25% - 30px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .workingplace {
+    display: none;
+  }
+}
+
+/* Наша команда */
+.team {
+  padding: 60px 0;
+  background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #f5f4fa;
+  }
+}
+
+/* список ul */
+@media screen and (min-width: 768px) {
+  .team__list {
+    margin-top: -30px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* li */
+.team__item {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__item {
+    flex: 0 0 calc(50% - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex: 0 0 calc(25% - 30px);
+  }
+}
+
+/*  team-content div*/
+.team__content {
+  padding: 30px 0 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__content {
+    padding: 30px 0;
+  }
+}
+
+/* Заголовки */
+.team__title {
+  margin-bottom: 30px;
+  font-weight: 700px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+/* Должность */
+.team__position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team__thumb {
+  max-height: 590px;
+}
+
+.team__texto {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .team__thumb {
+    display: flex;
+    height: 474px;
+    display: block;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+
+    /* nланшет */
+  }
+
+  .team__photo {
+    max-width: 100%;
+    height: auto;
+  }
+  .team__item {
+    display: flex;
+  }
+  .team__position_text {
+    font-size: 17px;
+    color: #0c0c0cb4;
+    margin-bottom: 60px;
+  }
+  .resume-link {
+    margin-top: 50px;
+  }
+  .team__socials {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__thumb {
+    max-width: 400px; /* Increase the maximum width */
+    height: auto; /* Allow the height to adjust accordingly */
+  }
+
+  .team__photo {
+    max-width: 100%; /* Ensure the image fits within its container */
+    max-height: 100%; /* Ensure the image doesn't overflow its container */
+    width: auto; /* Allow the width to adjust accordingly */
+    height: auto; /* Allow the height to adjust accordingly */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+  }
+  .team__position_text {
+    margin-top: 40px;
+    font-size: 17px;
+    margin-bottom: 90px;
+  }
+  .resume-link {
+    margin-top: 70px;
+  }
+  .team__socials {
+    margin-top: 90px;
+  }
+}
+.team__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.team__socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team__social-icon {
+  fill: currentColor;
+}
+
+.team__social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__social-links:hover,
+.team__social-links:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.resume-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.resume-link:hover {
+  background-color: #0e7ae6;
+}
+
+.team__position_text {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
+          <button
+            type="button"
+            class="menu-btn page-header__menu-btn js-open-menu"
+            data-menu-open
+          >
+            <svg class="menu-btn__menu" width="24px" height="16px">
+              <use href="./img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu__button" data-menu-close>
+              <svg class="mobile-menu__icon" width="19px" height="19px">
+                <use href="./img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-nav">
+              <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                  <a href="./index.html" class="mobile-nav__link">Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a
+                    href="./portfolio.html"
+                    class="mobile-nav__link mobile-nav__link--current"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="./contacts.html" class="mobile-nav__link"
+                    >Contactos</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a href="https://instagram.com/" class="mobile-social__link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a href="https://github.com/" class="mobile-social__link"
+                  >GitHub</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a href="https://facebook.com/" class="mobile-social__link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a href="https://linkedin.com/" class="mobile-social__link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <ul class="header__site-nav">
+            <li class="header__site-nav-item">
+              <a class="header__site-nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="header__site-nav-item">
+              <a
+                class="header__site-nav-link header__site-nav-link--current"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__site-nav-item">
+              <a class="header__site-nav-link" href="./contacts.html"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio">
+        <div class="portfolio__container container">
+          <h1 class="visually-hidden">Portfolio</h1>
+
+          <ul class="portfolio__list list">
+            <li class="portfolio__item">
+              <a href="https://remit.es/" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./img/remit.png"
+                    alt="Технокряк"
+                    width="370"
+                  />
+                  <div class="portfolio__overlay">
+                    <p>
+                      Remit (proyecto comercial) aplicación web para enviar SMS
+                      y correos electrónicos
+                    </p>
+                    <p>
+                      Tecnologías: C# .Net Core, JQuery, BootStrap, Angular, SQL
+                      Server
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__content">
+                  <h2 class="portfolio__title">Remit.es</h2>
+                  <p class="portfolio__description">Aplicación Web</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://fakturae.com/" class="portfolio__link">
+                <div class="portfolio__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./img/Facturae.png"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                  />
+                  <div class="portfolio__overlay">
+                    <p>
+                      Facturae (proyecto comercial) aplicación web para
+                      facilitar trabajo con facturas, impuestos, bancos y
+                      TicketBAI
+                    </p>
+                    <p>
+                      Tecnologías: C# .Net MVC, JQuery, BootStrap, SQL Server
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__content">
+                  <h2 class="portfolio__title">Facturae</h2>
+                  <p class="portfolio__description">Aplicación Web</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a
+                href="https://vladimir-plotnikov.github.io/nezlamniPRJ/"
+                class="portfolio__link"
+              >
+                <div class="portfolio__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./img/filmoteka.png"
+                    alt="Ресторан Seafood"
+                    width="370"
+                  />
+                  <div class="portfolio__overlay">
+                    <p>
+                      Filmoteca (no comercial, proyecto en equipo) aplicación
+                      para elegir una película
+                    </p>
+                    <p>
+                      Tecnologías: JS, HTML, SASS, REST API, AJAX, Parcel,
+                      GitHub
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__content">
+                  <h2 class="portfolio__title">Filmoteca</h2>
+                  <p class="portfolio__description">Aplicación Web Api</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a
+                href="https://annamelya2021.github.io/IceCream-Team/"
+                class="portfolio__link"
+              >
+                <div class="portfolio__thumb">
+                  <img
+                    class="portfolio__image"
+                    src="./img/ice.png"
+                    alt="ice"
+                    width="370"
+                  />
+                  <div class="portfolio__overlay">
+                    <p>
+                      Ice Cream (no comercial, proyecto en equipo) landing page
+                      para las ventas de productos
+                    </p>
+                    <p>Tecnologías: HTML, SASS, GitHub, Parcel, Figma</p>
+                  </div>
+                </div>
+                <div class="portfolio__content">
+                  <h2 class="portfolio__title">Ice Cream</h2>
+                  <p class="portfolio__description">Landing page</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper">
+          <div class="footer__social-networks">
+            <h2 class="footer__title">Únete a mí</h2>
+            <ul class="footer__socials-list">
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-links">
+                  <svg class="footer__social-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-instagram-white"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-links">
+                  <svg class="footer__social-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-twitter-white"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-links">
+                  <svg class="footer__social-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-facebook--white"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-links">
+                  <svg class="footer__social-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-linkedin-white"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./mobile-menu.js"></script>
+  </body>
+</html>
